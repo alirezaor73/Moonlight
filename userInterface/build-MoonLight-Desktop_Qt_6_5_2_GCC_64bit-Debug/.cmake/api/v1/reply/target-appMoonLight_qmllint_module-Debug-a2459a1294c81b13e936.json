@@ -23,7 +23,7 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 15,
+				"line" : 16,
 				"parent" : 0
 			},
 			{
@@ -47,7 +47,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 835,
+				"line" : 851,
 				"parent" : 4
 			}
 		]
@@ -62,8 +62,8 @@
 	{
 		"name" : "QmlLinter"
 	},
-	"id" : "appMoonLight_qmllint_json::@6890427a1f51a3e7e1df",
-	"name" : "appMoonLight_qmllint_json",
+	"id" : "appMoonLight_qmllint_module::@6890427a1f51a3e7e1df",
+	"name" : "appMoonLight_qmllint_module",
 	"paths" : 
 	{
 		"build" : ".",
@@ -91,13 +91,13 @@
 		{
 			"backtrace" : 5,
 			"isGenerated" : true,
-			"path" : "/home/client113/Desktop/moonlight/userInterface/build-MoonLight-Desktop_Qt_6_5_2_GCC_64bit-Debug/CMakeFiles/appMoonLight_qmllint_json",
+			"path" : "/home/client113/Desktop/moonlight/userInterface/build-MoonLight-Desktop_Qt_6_5_2_GCC_64bit-Debug/CMakeFiles/appMoonLight_qmllint_module",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "/home/client113/Desktop/moonlight/userInterface/build-MoonLight-Desktop_Qt_6_5_2_GCC_64bit-Debug/CMakeFiles/appMoonLight_qmllint_json.rule",
+			"path" : "/home/client113/Desktop/moonlight/userInterface/build-MoonLight-Desktop_Qt_6_5_2_GCC_64bit-Debug/CMakeFiles/appMoonLight_qmllint_module.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

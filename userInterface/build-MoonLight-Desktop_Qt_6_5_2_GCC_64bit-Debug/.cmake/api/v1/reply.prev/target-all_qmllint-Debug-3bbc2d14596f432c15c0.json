@@ -24,7 +24,7 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 15,
+				"line" : 16,
 				"parent" : 0
 			},
 			{
@@ -48,13 +48,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 884,
+				"line" : 876,
 				"parent" : 4
 			},
 			{
 				"command" : 5,
 				"file" : 0,
-				"line" : 887,
+				"line" : 878,
 				"parent" : 4
 			}
 		]
@@ -63,15 +63,11 @@
 	[
 		{
 			"backtrace" : 6,
-			"id" : "appMoonLight_qmllint_json::@6890427a1f51a3e7e1df"
+			"id" : "appMoonLight_qmllint::@6890427a1f51a3e7e1df"
 		}
 	],
-	"folder" : 
-	{
-		"name" : "QmlLinter"
-	},
-	"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
-	"name" : "all_qmllint_json",
+	"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+	"name" : "all_qmllint",
 	"paths" : 
 	{
 		"build" : ".",
