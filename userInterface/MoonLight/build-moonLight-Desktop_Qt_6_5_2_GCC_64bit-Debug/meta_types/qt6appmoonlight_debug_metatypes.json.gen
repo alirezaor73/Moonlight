@@ -1,0 +1,19 @@
+[
+    {
+        "classes": [
+            {
+                "className": "NetworkManager",
+                "object": true,
+                "qualifiedClassName": "NetworkManager",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "networkmanager.h",
+        "outputRevision": 68
+    }
+]

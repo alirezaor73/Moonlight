@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/moonLight/">
+    <file alias="Main.qml">/home/client113/Desktop/moonlight/userInterface/MoonLight/moonLight/Main.qml</file>
+  </qresource>
+</RCC>
+
