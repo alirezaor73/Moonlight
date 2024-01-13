@@ -1,19 +1,25 @@
 #include "networkManager.h"
+#include <iostream>
+#include <ostream>
 #include <stdio.h>
 #include <stdlib.h>
 #include <errno.h>
 #include <string.h>
 
 NetworkManager::NetworkManager() {
+
+}
+
+void NetworkManager::init()
+{
     int listenfd = bind_and_listen();
     if(listenfd<0)
     {
         return;
     }
     do_poll(listenfd);
+    return;
 }
-
-
 
 int NetworkManager::bind_and_listen()
 {
@@ -25,7 +31,7 @@ int NetworkManager::bind_and_listen()
         perror("socket");
         return -1;
     }
-    printf("socket ok\n");
+    std::cout << "socket ok" << std::endl;
     my_addr.sin_family = AF_INET;
     my_addr.sin_port = htons(PORT);
     my_addr.sin_addr.s_addr = INADDR_ANY;
@@ -35,13 +41,13 @@ int NetworkManager::bind_and_listen()
         perror("bind");
         return -2;
     }
-    printf("bind ok\n");
+    std::cout << "bind ok" << std::endl;
     if(listen(serverfd, LISTENQ) == -1)
     {
         perror("listen");
         return -3;
     }
-    printf("listen ok\n");
+    std::cout << "listen ok" << std::endl;
     return serverfd;
 }
 
@@ -50,7 +56,7 @@ void NetworkManager::do_poll(int listenfd)
     int connfd, sockfd;
     struct sockaddr_in cliaddr;
     socklen_t cliaddrlen;
-    struct pollfd clientfds[OPEN_MAX];      //可接受的client最大值
+    struct pollfd clientfds[OPEN_MAX];
     int maxi;
     int i;
     int nready;
@@ -59,7 +65,7 @@ void NetworkManager::do_poll(int listenfd)
     for(i = 1; i<OPEN_MAX; i++)
         clientfds[i].fd = -1;
     maxi = 0;
-    //初始化工作完成
+
     while(1)
     {
         nready = poll(clientfds, maxi+1, INFTIM);
@@ -81,7 +87,7 @@ void NetworkManager::do_poll(int listenfd)
                     exit(1);
                 }
             }
-            fprintf(stdout, "accept a new client:%s:%d\n", inet_ntoa(cliaddr.sin_addr), cliaddr.sin_port);
+            std::cout  << "accept a new client:" << inet_ntoa(cliaddr.sin_addr) << cliaddr.sin_port << std::endl;
             for(i = 1; i<OPEN_MAX; i++)
             {
                 if(clientfds[i].fd<0)
@@ -92,19 +98,19 @@ void NetworkManager::do_poll(int listenfd)
             }
             if(i == OPEN_MAX)
             {
-                fprintf(stderr, "too many clients.\n");
+                std::cout  << "too many clients.\n" << std::endl;
                 exit(1);
             }
             clientfds[i].events = POLLIN;
             maxi = (i>maxi?i:maxi);
-            if(--nready<=0)   //当前准备好的只有serverfd
+            if(--nready<=0)
                 continue;
         }
 
         char buf[MAXLINE];
         memset(buf, 0, MAXLINE);
         int readlen = 0;
-        for(i = 1; i<maxi; i++)    //第0个是监听端口
+        for(i = 1; i<maxi; i++)
         {
             if(clientfds[i].fd<0)
                 continue;
@@ -117,12 +123,10 @@ void NetworkManager::do_poll(int listenfd)
                     clientfds[i].fd = -1;
                     continue;
                 }
-                printf("msg is:");
+                std::cout << "msg is:";
                 write(STDOUT_FILENO, buf, readlen);
-                write(clientfds[i].fd, buf, readlen);  //发回去
+                write(clientfds[i].fd, buf, readlen);
             }
         }
     }
 }
-
-

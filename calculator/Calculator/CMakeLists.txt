@@ -5,7 +5,8 @@ project(Calculator LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(Calculator main.cpp)
+add_executable(Calculator main.cpp
+networkManager.cpp networkManager.h)
 
 include(GNUInstallDirs)
 install(TARGETS Calculator

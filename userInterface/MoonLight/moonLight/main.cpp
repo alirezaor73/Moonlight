@@ -7,6 +7,9 @@ int main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
 
+    NetworkManager *network = new NetworkManager;
+    network->connectTcp();
+
     QQmlApplicationEngine engine;
     const QUrl url(u"qrc:/moonLight/Main.qml"_qs);
     QObject::connect(
@@ -17,10 +20,6 @@ int main(int argc, char *argv[])
         Qt::QueuedConnection);
     engine.load(url);
 
-    QThread *thread;
-    NetworkManager *network = new NetworkManager;
-    network->moveToThread(thread);
-    thread->start();
 
     return app.exec();
 }

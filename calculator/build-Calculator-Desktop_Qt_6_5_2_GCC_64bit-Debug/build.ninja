@@ -55,6 +55,12 @@ build CMakeFiles/Calculator.dir/main.cpp.o: CXX_COMPILER__Calculator_unscanned_D
   OBJECT_DIR = CMakeFiles/Calculator.dir
   OBJECT_FILE_DIR = CMakeFiles/Calculator.dir
 
+build CMakeFiles/Calculator.dir/networkManager.cpp.o: CXX_COMPILER__Calculator_unscanned_Debug /home/client113/Desktop/moonlight/calculator/Calculator/networkManager.cpp || cmake_object_order_depends_target_Calculator
+  DEP_FILE = CMakeFiles/Calculator.dir/networkManager.cpp.o.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/Calculator.dir
+  OBJECT_FILE_DIR = CMakeFiles/Calculator.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Calculator
@@ -63,7 +69,7 @@ build CMakeFiles/Calculator.dir/main.cpp.o: CXX_COMPILER__Calculator_unscanned_D
 #############################################
 # Link the executable Calculator
 
-build Calculator: CXX_EXECUTABLE_LINKER__Calculator_Debug CMakeFiles/Calculator.dir/main.cpp.o
+build Calculator: CXX_EXECUTABLE_LINKER__Calculator_Debug CMakeFiles/Calculator.dir/main.cpp.o CMakeFiles/Calculator.dir/networkManager.cpp.o
   FLAGS = -DQT_QML_DEBUG -g
   OBJECT_DIR = CMakeFiles/Calculator.dir
   POST_BUILD = :

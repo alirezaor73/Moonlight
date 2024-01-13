@@ -4,6 +4,13 @@
             "className": "NetworkManager",
             "object": true,
             "qualifiedClassName": "NetworkManager",
+            "slots": [
+                {
+                    "access": "private",
+                    "name": "readTcpData",
+                    "returnType": "void"
+                }
+            ],
             "superClasses": [
                 {
                     "access": "public",

@@ -1,15 +1,8 @@
 #ifndef NETWORKMANAGER_H
 #define NETWORKMANAGER_H
 
-#include<sys/types.h>
-#include<sys/socket.h>
-#include<unistd.h>
-#include<netinet/in.h>
-#include<arpa/inet.h>
-#include<sys/wait.h>
-#include<strings.h>
-#include<poll.h>
 #include <QObject>
+#include <QTcpSocket>
 #define IPADDRESS "127.0.0.1"
 #define PORT 6666
 #define MAXLINE 1024
@@ -20,7 +13,13 @@ class NetworkManager : public QObject
     Q_OBJECT
 public:
     NetworkManager();
-    static void handle_connection(int sockfd);
+    void connectTcp();
+    void sendTcpData(QByteArray data);
+private slots:
+    void readTcpData();
+
+private:
+    QTcpSocket *_pSocket;
 };
 
 #endif // NETWORKMANAGER_H
