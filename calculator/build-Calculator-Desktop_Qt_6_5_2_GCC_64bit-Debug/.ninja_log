@@ -40,3 +40,10 @@
 0	33	1705148499	CMakeFiles/Calculator.dir/main.cpp.o	3e1e8174658eacd9
 0	226	1705148499	CMakeFiles/Calculator.dir/networkManager.cpp.o	60b9edb09091b75b
 226	268	1705148499	Calculator	342576e551ec402c
+0	34	1705152494	CMakeFiles/Calculator.dir/main.cpp.o	3e1e8174658eacd9
+1	263	1705152494	CMakeFiles/Calculator.dir/networkManager.cpp.o	60b9edb09091b75b
+263	307	1705152494	Calculator	342576e551ec402c
+1	241	1705739330	CMakeFiles/Calculator.dir/networkManager.cpp.o	60b9edb09091b75b
+241	306	1705739330	Calculator	342576e551ec402c
+1	222	1705739438	CMakeFiles/Calculator.dir/networkManager.cpp.o	60b9edb09091b75b
+222	270	1705739438	Calculator	342576e551ec402c

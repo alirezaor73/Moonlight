@@ -7,7 +7,6 @@ NetworkManager::NetworkManager() {
 
 void NetworkManager::connectTcp()
 {
-    ; // <-- fill with data
 
     _pSocket = new QTcpSocket( this ); // <-- needs to be a member variable: QTcpSocket * _pSocket;
     connect( _pSocket, &QTcpSocket::readyRead ,this , &NetworkManager::readTcpData);

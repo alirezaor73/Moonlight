@@ -28,7 +28,7 @@ int NetworkManager::bind_and_listen()
     unsigned int sin_size;
     if((serverfd = socket(AF_INET, SOCK_STREAM, 0)) == -1)
     {
-        perror("socket");
+        perror("socket failed");
         return -1;
     }
     std::cout << "socket ok" << std::endl;
@@ -38,13 +38,13 @@ int NetworkManager::bind_and_listen()
     bzero(&(my_addr.sin_zero), 0);
     if(bind(serverfd, (struct sockaddr*)&my_addr, sizeof(struct sockaddr)) == -1)
     {
-        perror("bind");
+        perror("bind failed");
         return -2;
     }
     std::cout << "bind ok" << std::endl;
     if(listen(serverfd, LISTENQ) == -1)
     {
-        perror("listen");
+        perror("listen failed");
         return -3;
     }
     std::cout << "listen ok" << std::endl;
