@@ -1,0 +1,24 @@
+{
+    "classes": [
+        {
+            "className": "NetworkManager",
+            "object": true,
+            "qualifiedClassName": "NetworkManager",
+            "slots": [
+                {
+                    "access": "private",
+                    "name": "readTcpData",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "networkmanager.h",
+    "outputRevision": 68
+}

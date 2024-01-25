@@ -1,0 +1,14 @@
+-rootPath
+/home/alireza/Desktop/projects/Moonlight/userInterface/MoonLight/moonLight
+-cmake-output
+-output-file
+/home/alireza/Desktop/projects/Moonlight/userInterface/MoonLight/build-moonLight-Desktop_Qt_6_6_1_GCC_64bit-Debug/.qt_plugins/Qt6_QmlPlugins_Imports_appmoonLight.cmake
+-importPath
+/home/alireza/Desktop/projects/Moonlight/userInterface/MoonLight/build-moonLight-Desktop_Qt_6_6_1_GCC_64bit-Debug/moonLight
+-importPath
+/home/alireza/Desktop/projects/Moonlight/userInterface/MoonLight/build-moonLight-Desktop_Qt_6_6_1_GCC_64bit-Debug
+-importPath
+/opt/Qt/6.6.1/gcc_64/./qml
+-qrcFiles
+/home/alireza/Desktop/projects/Moonlight/userInterface/MoonLight/build-moonLight-Desktop_Qt_6_6_1_GCC_64bit-Debug/.rcc/qmake_moonLight.qrc
+/home/alireza/Desktop/projects/Moonlight/userInterface/MoonLight/build-moonLight-Desktop_Qt_6_6_1_GCC_64bit-Debug/.rcc/appmoonLight_raw_qml_0.qrc

@@ -23,13 +23,6 @@ public:
     NetworkManager();
     void init();
 
-private:
-    int bind_and_listen();
-    void do_poll(int listenfd);
-
-
-private:
-
 };
 
 #endif // NETWORKMANAGER_H

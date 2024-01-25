@@ -1,0 +1,1 @@
+/home/alireza/Desktop/projects/Moonlight/userInterface/MoonLight/build-moonLight-Desktop_Qt_6_6_1_GCC_64bit-Debug/appmoonLight_autogen/include/../EWIEGA46WW/moc_networkmanager.cpp.json
