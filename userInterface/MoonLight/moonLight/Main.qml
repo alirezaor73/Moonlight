@@ -2,6 +2,7 @@ import QtQuick
 import QtQuick.Layouts
 import QtQuick.Controls
 
+
 Window {
     id: window
     width: 1280
@@ -24,7 +25,7 @@ Window {
                     text: qsTr("450 :")
                     color: "white"
                 }
-                Switch{
+                MoonSwitch{
 
                 }
                 ColumnLayout{
@@ -32,9 +33,7 @@ Window {
                         text: qsTr("V")
                         color: "white"
                     }
-                    TextInput{
-                        text: "134"
-                        color: "white"
+                    MoonInput{
                     }
                 }
                 ColumnLayout{
@@ -42,9 +41,7 @@ Window {
                         text: qsTr("C")
                         color: "white"
                     }
-                    TextInput{
-                        text: "134"
-                        color: "white"
+                    MoonInput{
                     }
                 }
                 ColumnLayout{
@@ -52,29 +49,21 @@ Window {
                         text: qsTr("Step")
                         color: "white"
                     }
-                    ComboBox{
+                    MoonComboBox{
 
                     }
                 }
-                Text {
-                    text: qsTr("-")
-                    color: "white"
-                }
+
                 ColumnLayout{
                     Text {
                         text: qsTr("Value")
                         color: "white"
                     }
-                    TextInput{
-                        text: "134"
-                        color: "white"
+                    MoonSpinBox{
                     }
                 }
-                Text {
-                    text: qsTr("+")
-                    color: "white"
-                }
-                Button{
+
+                MoonButton{
                     text: "Save"
                 }
             }

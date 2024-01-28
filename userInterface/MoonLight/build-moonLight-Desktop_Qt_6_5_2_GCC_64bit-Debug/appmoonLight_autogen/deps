@@ -666,6 +666,23 @@ appmoonLight_autogen/timestamp: \
 	/home/client113/Qt/6.5.2/gcc_64/lib/cmake/Qt6Quick/Qt6QuickTargets-relwithdebinfo.cmake \
 	/home/client113/Qt/6.5.2/gcc_64/lib/cmake/Qt6Quick/Qt6QuickTargets.cmake \
 	/home/client113/Qt/6.5.2/gcc_64/lib/cmake/Qt6Quick/Qt6QuickVersionlessTargets.cmake \
+	/home/client113/Qt/6.5.2/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake \
+	/home/client113/Qt/6.5.2/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake \
+	/home/client113/Qt/6.5.2/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake \
+	/home/client113/Qt/6.5.2/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake \
+	/home/client113/Qt/6.5.2/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake \
+	/home/client113/Qt/6.5.2/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake \
+	/home/client113/Qt/6.5.2/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets-relwithdebinfo.cmake \
+	/home/client113/Qt/6.5.2/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake \
+	/home/client113/Qt/6.5.2/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessTargets.cmake \
+	/home/client113/Qt/6.5.2/gcc_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake \
+	/home/client113/Qt/6.5.2/gcc_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake \
+	/home/client113/Qt/6.5.2/gcc_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake \
+	/home/client113/Qt/6.5.2/gcc_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake \
+	/home/client113/Qt/6.5.2/gcc_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake \
+	/home/client113/Qt/6.5.2/gcc_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-relwithdebinfo.cmake \
+	/home/client113/Qt/6.5.2/gcc_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake \
+	/home/client113/Qt/6.5.2/gcc_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake \
 	/home/client113/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeCXXInformation.cmake \
 	/home/client113/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
 	/home/client113/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake \

@@ -12,6 +12,41 @@ namespace _moonLight_Main_qml {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
+namespace _moonLight_MoonSwitch_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::TypedFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _moonLight_MoonInput_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::TypedFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _moonLight_MoonComboBox_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::TypedFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _moonLight_MoonButton_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::TypedFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _moonLight_MoonSpinBox_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::TypedFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
 
 }
 namespace {
@@ -27,6 +62,11 @@ Q_GLOBAL_STATIC(Registry, unitRegistry)
 
 Registry::Registry() {
     resourcePathToCachedUnit.insert(QStringLiteral("/moonLight/Main.qml"), &QmlCacheGeneratedCode::_moonLight_Main_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/moonLight/MoonSwitch.qml"), &QmlCacheGeneratedCode::_moonLight_MoonSwitch_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/moonLight/MoonInput.qml"), &QmlCacheGeneratedCode::_moonLight_MoonInput_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/moonLight/MoonComboBox.qml"), &QmlCacheGeneratedCode::_moonLight_MoonComboBox_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/moonLight/MoonButton.qml"), &QmlCacheGeneratedCode::_moonLight_MoonButton_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/moonLight/MoonSpinBox.qml"), &QmlCacheGeneratedCode::_moonLight_MoonSpinBox_qml::unit);
     QQmlPrivate::RegisterQmlUnitCacheHook registration;
     registration.structVersion = 0;
     registration.lookupCachedQmlUnit = &lookupCachedUnit;

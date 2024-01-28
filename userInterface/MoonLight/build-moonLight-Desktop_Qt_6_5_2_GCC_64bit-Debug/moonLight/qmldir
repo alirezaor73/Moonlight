@@ -2,4 +2,9 @@ module moonLight
 typeinfo appmoonLight.qmltypes
 prefer :/moonLight/
 Main 1.0 Main.qml
+MoonSwitch 1.0 MoonSwitch.qml
+MoonInput 1.0 MoonInput.qml
+MoonComboBox 1.0 MoonComboBox.qml
+MoonButton 1.0 MoonButton.qml
+MoonSpinBox 1.0 MoonSpinBox.qml
 
