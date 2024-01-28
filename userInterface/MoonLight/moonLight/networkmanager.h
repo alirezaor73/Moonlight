@@ -14,7 +14,7 @@ class NetworkManager : public QObject
 public:
     NetworkManager();
     void connectTcp();
-    void sendTcpData(QByteArray data);
+    void sendTcpData(QByteArray *data);
 private slots:
     void readTcpData();
 

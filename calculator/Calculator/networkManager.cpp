@@ -48,12 +48,13 @@ void NetworkManager::init()
         while(true) {
             char buffer[1024];
             memset(buffer, 0, sizeof(buffer));
-            ssize_t bytesRead = recv(clientSocket, buffer, sizeof(buffer) - 1, 0);
+            ssize_t bytesRead = recv(clientSocket, buffer, 1024, 0);
             if(bytesRead <= 0) {
                 std::cerr << "Error reading from client or client disconnected" << std::endl;
                 break;
             } else {
                 std::cout << "Received message from client: " << buffer << std::endl;
+                send(clientSocket, buffer, bytesRead, 0);
             }
         }
 

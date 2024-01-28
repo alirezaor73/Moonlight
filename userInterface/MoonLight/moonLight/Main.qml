@@ -8,63 +8,109 @@ Window {
     width: 1280
     height: 800
     visible: true
-    title: qsTr("Hello World")
+    title: qsTr("MoonLight")
     color: "#232C3D"
-    ColumnLayout{
+    RowLayout{
         x: 40
         y: 40
         width: 1200
-        height: 727
-        //---------------450-----------------------------------------------------------------------------
-        Item{
-            id: l450
-            height: 91
-            RowLayout{
-                spacing: 40
-                Text {
-                    text: qsTr("450 :")
-                    color: "white"
-                }
-                MoonSwitch{
+        height: 48
+        spacing: 24
+        MoonButton{
+            checkBTN: true
+            text: "450"
+        }
+        MoonButton{
+            checkBTN: false
+            text: "450"
+        }
+        MoonButton{
+            checkBTN: false
+            text: "450"
+        }
+        MoonButton{
+            checkBTN: false
+            text: "450"
+        }
+    }
+    Item{
+        width: 1200
+        height: 170
+        y:150
+        x:40
+        RowLayout{
+            spacing: 80
+            width: parent.width
+            height: 31
+            MoonSwitch{
 
-                }
+            }
+            Text {
+                text: qsTr("V-DAC:")
+                color: "white"
+                font.pointSize: 16
+            }
+            Text {
+                text: qsTr("V-Shant:")
+                color: "white"
+                font.pointSize: 16
+            }
+            Text {
+                text: qsTr("V-A:")
+                color: "white"
+                font.pointSize: 16
+            }
+            Text {
+                text: qsTr("V-K:")
+                color: "white"
+                font.pointSize: 16
+            }
+            Text {
+                text: qsTr("V-D-SUP:")
+                color: "white"
+                font.pointSize: 16
+            }
+        }
+        Item{
+            width: 1200
+            height: 91
+            x:40
+            y:100
+            RowLayout{
+                anchors.fill: parent
+                spacing: 48
                 ColumnLayout{
+                    spacing: 12
                     Text {
-                        text: qsTr("V")
+                        text: qsTr("Power")
                         color: "white"
-                    }
-                    MoonInput{
-                    }
-                }
-                ColumnLayout{
-                    Text {
-                        text: qsTr("C")
-                        color: "white"
-                    }
-                    MoonInput{
-                    }
-                }
-                ColumnLayout{
-                    Text {
-                        text: qsTr("Step")
-                        color: "white"
+                        font.pointSize: 18
                     }
                     MoonComboBox{
 
                     }
                 }
-
                 ColumnLayout{
+                    spacing: 12
                     Text {
-                        text: qsTr("Value")
+                        text: qsTr("V-SUP")
                         color: "white"
+                        font.pointSize: 18
                     }
                     MoonSpinBox{
+
                     }
                 }
+                ColumnLayout{
+                    spacing: 12
+                    Text {
+                        text: qsTr("I-D")
+                        color: "white"
+                        font.pointSize: 18
+                    }
+                    MoonSpinBox{
 
-                MoonButton{
-                    text: "Save"
+                    }
                 }
             }
         }
