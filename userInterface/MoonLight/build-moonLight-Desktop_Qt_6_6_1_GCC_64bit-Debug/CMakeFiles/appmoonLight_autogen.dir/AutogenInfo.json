@@ -708,6 +708,12 @@
 	"HEADERS" : 
 	[
 		[
+			"/home/alireza/Desktop/projects/Moonlight/userInterface/MoonLight/moonLight/calibrator.h",
+			"MU",
+			"EWIEGA46WW/moc_calibrator.cpp",
+			null
+		],
+		[
 			"/home/alireza/Desktop/projects/Moonlight/userInterface/MoonLight/moonLight/networkmanager.h",
 			"MU",
 			"EWIEGA46WW/moc_networkmanager.cpp",
@@ -784,6 +790,7 @@
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : 
 	[
+		"/home/alireza/Desktop/projects/Moonlight/userInterface/MoonLight/build-moonLight-Desktop_Qt_6_6_1_GCC_64bit-Debug/.rcc/qmlcache/appmoonLight_CalibrationPage_qml.cpp",
 		"/home/alireza/Desktop/projects/Moonlight/userInterface/MoonLight/build-moonLight-Desktop_Qt_6_6_1_GCC_64bit-Debug/.rcc/qmlcache/appmoonLight_Main_qml.cpp",
 		"/home/alireza/Desktop/projects/Moonlight/userInterface/MoonLight/build-moonLight-Desktop_Qt_6_6_1_GCC_64bit-Debug/.rcc/qmlcache/appmoonLight_MoonButton_qml.cpp",
 		"/home/alireza/Desktop/projects/Moonlight/userInterface/MoonLight/build-moonLight-Desktop_Qt_6_6_1_GCC_64bit-Debug/.rcc/qmlcache/appmoonLight_MoonComboBox_qml.cpp",
@@ -810,6 +817,11 @@
 			null
 		],
 		[
+			"/home/alireza/Desktop/projects/Moonlight/userInterface/MoonLight/moonLight/calibrator.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/alireza/Desktop/projects/Moonlight/userInterface/MoonLight/moonLight/main.cpp",
 			"MU",
 			null
@@ -824,6 +836,7 @@
 	"UIC_SEARCH_PATHS" : [],
 	"UIC_SKIP" : 
 	[
+		"/home/alireza/Desktop/projects/Moonlight/userInterface/MoonLight/build-moonLight-Desktop_Qt_6_6_1_GCC_64bit-Debug/.rcc/qmlcache/appmoonLight_CalibrationPage_qml.cpp",
 		"/home/alireza/Desktop/projects/Moonlight/userInterface/MoonLight/build-moonLight-Desktop_Qt_6_6_1_GCC_64bit-Debug/.rcc/qmlcache/appmoonLight_Main_qml.cpp",
 		"/home/alireza/Desktop/projects/Moonlight/userInterface/MoonLight/build-moonLight-Desktop_Qt_6_6_1_GCC_64bit-Debug/.rcc/qmlcache/appmoonLight_MoonButton_qml.cpp",
 		"/home/alireza/Desktop/projects/Moonlight/userInterface/MoonLight/build-moonLight-Desktop_Qt_6_6_1_GCC_64bit-Debug/.rcc/qmlcache/appmoonLight_MoonComboBox_qml.cpp",

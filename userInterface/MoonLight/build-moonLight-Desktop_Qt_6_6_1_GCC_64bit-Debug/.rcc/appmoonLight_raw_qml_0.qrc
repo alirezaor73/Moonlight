@@ -6,6 +6,7 @@
     <file alias="MoonComboBox.qml">/home/alireza/Desktop/projects/Moonlight/userInterface/MoonLight/moonLight/MoonComboBox.qml</file>
     <file alias="MoonButton.qml">/home/alireza/Desktop/projects/Moonlight/userInterface/MoonLight/moonLight/MoonButton.qml</file>
     <file alias="MoonSpinBox.qml">/home/alireza/Desktop/projects/Moonlight/userInterface/MoonLight/moonLight/MoonSpinBox.qml</file>
+    <file alias="CalibrationPage.qml">/home/alireza/Desktop/projects/Moonlight/userInterface/MoonLight/moonLight/CalibrationPage.qml</file>
   </qresource>
 </RCC>
 

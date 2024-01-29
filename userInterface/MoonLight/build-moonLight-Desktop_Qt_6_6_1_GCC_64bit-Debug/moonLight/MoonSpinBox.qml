@@ -5,8 +5,8 @@ import QtQuick.Layouts
 SpinBox {
     id: spinBox
     value: 0
-    Layout.preferredHeight: 54
-    Layout.preferredWidth: 235
+    implicitHeight: 54
+    implicitWidth: 235
     editable: false
     background:Rectangle{
         color: "transparent"

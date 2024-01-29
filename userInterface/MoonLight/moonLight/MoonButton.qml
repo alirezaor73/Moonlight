@@ -6,9 +6,19 @@ Button {
     property bool checkBTN: true
     property bool activeBTN: true
 
+
+    onCheckBTNChanged: {
+        if (checkBTN == true){
+            bkg.color = "#4DB6AC"
+        } else{
+            bkg.color = "transparent"
+        }
+    }
+
     id: root
     implicitWidth: 282
     implicitHeight: 48
+    palette.buttonText: "white"
 
     background: Rectangle{
         id: bkg

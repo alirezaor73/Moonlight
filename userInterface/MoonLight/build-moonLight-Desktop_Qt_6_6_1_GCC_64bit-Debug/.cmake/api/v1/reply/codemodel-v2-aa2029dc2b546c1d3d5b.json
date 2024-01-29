@@ -1,0 +1,169 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-e2c79446f229f35097a1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "moonLight",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-Debug-a26d2b13375883d07990.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-Debug-99e5112cff85d60163d0.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_module-Debug-de5ce8efb9b9f6aed3ac.json",
+					"name" : "all_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-Debug-65458c353dd6a9d8baf7.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appmoonLight::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appmoonLight-Debug-e4efb42be0551dcc66f2.json",
+					"name" : "appmoonLight",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appmoonLight_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appmoonLight_autogen-Debug-6a86925697a68ff68117.json",
+					"name" : "appmoonLight_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appmoonLight_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appmoonLight_autogen_timestamp_deps-Debug-811fa712af0cf9988880.json",
+					"name" : "appmoonLight_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appmoonLight_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appmoonLight_qmlimportscan-Debug-67633398ebb5bf77d8ad.json",
+					"name" : "appmoonLight_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appmoonLight_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appmoonLight_qmllint-Debug-21a7693d97c8ed609886.json",
+					"name" : "appmoonLight_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appmoonLight_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appmoonLight_qmllint_json-Debug-183726e0fcd251f3a6d0.json",
+					"name" : "appmoonLight_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appmoonLight_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appmoonLight_qmllint_module-Debug-ee448ecb5a72747e0cdc.json",
+					"name" : "appmoonLight_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appmoonLight_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appmoonLight_qmltyperegistration-Debug-7538795b5cb04c9829e3.json",
+					"name" : "appmoonLight_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appmoonLight_tooling::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appmoonLight_tooling-Debug-12fc5b09fb5fc78ddbbc.json",
+					"name" : "appmoonLight_tooling",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/alireza/Desktop/projects/Moonlight/userInterface/MoonLight/build-moonLight-Desktop_Qt_6_6_1_GCC_64bit-Debug",
+		"source" : "/home/alireza/Desktop/projects/Moonlight/userInterface/MoonLight/moonLight"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

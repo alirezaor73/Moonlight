@@ -5,6 +5,8 @@ appmoonLight_autogen/timestamp: \
   CMakeFiles/3.27.7/CMakeSystem.cmake \
   appmoonLight_autogen/moc_predefs.h \
   /home/alireza/Desktop/projects/Moonlight/userInterface/MoonLight/moonLight/CMakeLists.txt \
+  /home/alireza/Desktop/projects/Moonlight/userInterface/MoonLight/moonLight/calibrator.cpp \
+  /home/alireza/Desktop/projects/Moonlight/userInterface/MoonLight/moonLight/calibrator.h \
   /home/alireza/Desktop/projects/Moonlight/userInterface/MoonLight/moonLight/main.cpp \
   /home/alireza/Desktop/projects/Moonlight/userInterface/MoonLight/moonLight/networkmanager.cpp \
   /home/alireza/Desktop/projects/Moonlight/userInterface/MoonLight/moonLight/networkmanager.h \

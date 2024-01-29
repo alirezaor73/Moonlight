@@ -815,6 +815,12 @@
 	"HEADERS" : 
 	[
 		[
+			"/home/client113/Desktop/moonlight/userInterface/MoonLight/moonLight/calibrator.h",
+			"MU",
+			"EWIEGA46WW/moc_calibrator.cpp",
+			null
+		],
+		[
 			"/home/client113/Desktop/moonlight/userInterface/MoonLight/moonLight/networkmanager.h",
 			"MU",
 			"EWIEGA46WW/moc_networkmanager.cpp",
@@ -890,6 +896,7 @@
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : 
 	[
+		"/home/client113/Desktop/moonlight/userInterface/MoonLight/build-moonLight-Desktop_Qt_6_5_2_GCC_64bit-Debug/.rcc/qmlcache/appmoonLight_CalibrationPage_qml.cpp",
 		"/home/client113/Desktop/moonlight/userInterface/MoonLight/build-moonLight-Desktop_Qt_6_5_2_GCC_64bit-Debug/.rcc/qmlcache/appmoonLight_Main_qml.cpp",
 		"/home/client113/Desktop/moonlight/userInterface/MoonLight/build-moonLight-Desktop_Qt_6_5_2_GCC_64bit-Debug/.rcc/qmlcache/appmoonLight_MoonButton_qml.cpp",
 		"/home/client113/Desktop/moonlight/userInterface/MoonLight/build-moonLight-Desktop_Qt_6_5_2_GCC_64bit-Debug/.rcc/qmlcache/appmoonLight_MoonComboBox_qml.cpp",
@@ -916,6 +923,11 @@
 			null
 		],
 		[
+			"/home/client113/Desktop/moonlight/userInterface/MoonLight/moonLight/calibrator.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/client113/Desktop/moonlight/userInterface/MoonLight/moonLight/main.cpp",
 			"MU",
 			null
@@ -930,6 +942,7 @@
 	"UIC_SEARCH_PATHS" : [],
 	"UIC_SKIP" : 
 	[
+		"/home/client113/Desktop/moonlight/userInterface/MoonLight/build-moonLight-Desktop_Qt_6_5_2_GCC_64bit-Debug/.rcc/qmlcache/appmoonLight_CalibrationPage_qml.cpp",
 		"/home/client113/Desktop/moonlight/userInterface/MoonLight/build-moonLight-Desktop_Qt_6_5_2_GCC_64bit-Debug/.rcc/qmlcache/appmoonLight_Main_qml.cpp",
 		"/home/client113/Desktop/moonlight/userInterface/MoonLight/build-moonLight-Desktop_Qt_6_5_2_GCC_64bit-Debug/.rcc/qmlcache/appmoonLight_MoonButton_qml.cpp",
 		"/home/client113/Desktop/moonlight/userInterface/MoonLight/build-moonLight-Desktop_Qt_6_5_2_GCC_64bit-Debug/.rcc/qmlcache/appmoonLight_MoonComboBox_qml.cpp",

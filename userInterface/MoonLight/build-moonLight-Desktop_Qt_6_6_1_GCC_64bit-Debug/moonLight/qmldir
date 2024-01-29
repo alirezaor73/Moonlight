@@ -7,4 +7,5 @@ MoonInput 1.0 MoonInput.qml
 MoonComboBox 1.0 MoonComboBox.qml
 MoonButton 1.0 MoonButton.qml
 MoonSpinBox 1.0 MoonSpinBox.qml
+CalibrationPage 1.0 CalibrationPage.qml
 

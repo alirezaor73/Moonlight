@@ -2,12 +2,31 @@ import QtQuick
 import QtQuick.Controls
 
 Button {
-    id: root
-    implicitWidth: 96
-    implicitHeight: 87
-    background: Rectangle{
-        anchors.fill: root
-        color: "#4DB6AC"
-        radius: 10
+
+    property bool checkBTN: true
+    property bool activeBTN: true
+
+    onCheckBTNChanged: {
+        if (checkBTN == true){
+            bkg.color = "#4DB6AC"
+        } else{
+            bkg.color = "transparent"
+        }
     }
+
+    id: root
+    implicitWidth: 282
+    implicitHeight: 48
+    palette.buttonText: "white"
+
+    background: Rectangle{
+        id: bkg
+        anchors.fill: root
+        color: checkBTN ? "#4DB6AC" : "transparent"
+        radius: 10
+        border.width: 2
+        border.color: "#53575E"
+    }
+    onPressed: bkg.color = "#21A191"
+    onReleased: bkg.color = checkBTN ? "#4DB6AC" : "transparent"
 }
