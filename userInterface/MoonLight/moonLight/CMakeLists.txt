@@ -11,6 +11,7 @@ qt_standard_project_setup()
 qt_add_executable(appmoonLight
     main.cpp
     networkmanager.h networkmanager.cpp
+    calibrator.h calibrator.cpp
 )
 
 qt_add_qml_module(appmoonLight
@@ -22,6 +23,7 @@ qt_add_qml_module(appmoonLight
     QML_FILES MoonComboBox.qml
     QML_FILES MoonButton.qml
     QML_FILES MoonSpinBox.qml
+    QML_FILES CalibrationPage.qml
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

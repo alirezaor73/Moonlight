@@ -20,7 +20,7 @@ Switch {
             width: 27
             height: 27
             radius: height/2
-            color: "white"
+            color: control.checked ? "#4DB6AC" : "white"
             MultiEffect{
                 source: toggleBtn
                 anchors.fill: toggleBtn
@@ -30,6 +30,7 @@ Switch {
                 shadowOpacity: 0.3
                 shadowScale: 1.2
             }
+
 
             Behavior on x {
                 enabled: !control.down

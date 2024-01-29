@@ -5,8 +5,8 @@ import QtQuick.Layouts
 SpinBox {
     id: spinBox
     value: 0
-    Layout.preferredHeight: 54
-    Layout.preferredWidth: 235
+    implicitHeight: 54
+    implicitWidth: 235
     editable: false
     background:Rectangle{
         color: "transparent"
@@ -20,26 +20,30 @@ SpinBox {
             width: 55
             height: 54
             Text {
+                id : minus
                 anchors.centerIn: parent
                 color: "white"
                 text: qsTr("-")
+                font.pointSize: 30
             }
             color: "transparent"
             MouseArea{
                 anchors.fill: parent
                 onClicked: spinBox.value = parseFloat(spinBox.value) - spinBox.stepSize
+                onPressed: minus.color = "#4DB6AC"
+                onReleased: minus.color = "white"
             }
         }
 
         TextField {
             id: editor
             text: spinBox.value
-            Layout.preferredHeight: 56
-            Layout.preferredWidth: 125
+            Layout.preferredHeight: spinBox.height
+            Layout.preferredWidth: spinBox.width - 110
             background: Rectangle{
                 id: holder
-                width: 125
-                height: 56
+                width: editor .width
+                height: editor.height
                 radius: 10
                 color: "#4D586C"
             }
@@ -52,14 +56,18 @@ SpinBox {
             width: 55
             height: 54
             Text {
+                id: plus
                 anchors.centerIn: parent
                 color: "white"
                 text: qsTr("+")
+                font.pointSize: 18
             }
             color: "transparent"
             MouseArea{
                 anchors.fill: parent
                 onClicked: spinBox.value = parseFloat(spinBox.value) + spinBox.stepSize
+                onPressed: plus.color = "#4DB6AC"
+                onReleased: plus.color = "white"
             }
         }
     }

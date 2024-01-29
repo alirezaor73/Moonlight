@@ -18,24 +18,29 @@ void NetworkManager::connectTcp()
 
     QTimer *timerUpdateAssign = new QTimer();
     QObject::connect(timerUpdateAssign, &QTimer::timeout, [this](){
-        QByteArray data;
-        data.resize(2);
-        data[0] = 0x3c;
-        data[1] = 0xb8;
+        QByteArray *data = new QByteArray;
+        data->resize(2);
+        data[0].setNum(2);
         sendTcpData(data);
     });
     timerUpdateAssign->start(5000);
 }
 
-void NetworkManager::sendTcpData(QByteArray data)
+void NetworkManager::sendTcpData(QByteArray *data)
 {
-    qDebug() << "data Sent:" << data ;
-    _pSocket->write(data);
+    qDebug() << "data Sent:" << data[0].toInt() ;
+    //send int and float data through socket
+    std::string str = "salam";
+    _pSocket->write(str.c_str());
+    _pSocket->write(data->constData(), data->length());
+    _pSocket->flush();
+
 }
 
 void NetworkManager::readTcpData()
 {
     QByteArray data = _pSocket->readAll();
+    qDebug() << "Data Received:" << data ;
 }
 
 
