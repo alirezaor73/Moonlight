@@ -1,10 +1,12 @@
 import QtQuick
 import QtQuick.Layouts
 import "../Components"
+// import CalIns 1.0
 
 
 Item {
 
+    property var calIns
 
     RowLayout{
         x: 40
@@ -21,6 +23,7 @@ Item {
                 btn635.checkBTN = false
                 btn8081.checkBTN = false
                 btn8082.checkBTN = false
+                // Calibrator.channel = 450
             }
         }
         MoonButton{
@@ -32,6 +35,7 @@ Item {
                 btn450.checkBTN = false
                 btn8081.checkBTN = false
                 btn8082.checkBTN = false
+                // Calibrator.channel = 635
             }
         }
         MoonButton{
@@ -43,6 +47,7 @@ Item {
                 btn635.checkBTN = false
                 btn450.checkBTN = false
                 btn8082.checkBTN = false
+                // Calibrator.channel = 8081
             }
         }
         MoonButton{
@@ -54,6 +59,7 @@ Item {
                 btn635.checkBTN = false
                 btn8081.checkBTN = false
                 btn450.checkBTN = false
+                // Calibrator.channel = 8082
             }
         }
     }
@@ -156,6 +162,8 @@ Item {
             width: 224
             height: 56
             checkBTN: true
+            onClicked: Calibrator.sendCalibrationData()
+
         }
     }
 }

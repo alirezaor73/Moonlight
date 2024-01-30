@@ -2,26 +2,28 @@
 #include <QQmlApplicationEngine>
 #include "networkmanager.h"
 #include "calibrator.h"
+#include "qqmlcomponent.h"
 #include <QThread>
 
 int main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
 
+//--initialize network------------------------------------------
     NetworkManager *network = new NetworkManager;
     network->connectTcp();
 
-    QQmlApplicationEngine engine;
-    const QUrl url(u"qrc:/Main.qml"_qs);
-    QObject::connect(
-        &engine,
-        &QQmlApplicationEngine::objectCreationFailed,
-        &app,
-        []() { QCoreApplication::exit(-1); },
-        Qt::QueuedConnection);
-    engine.load(url);
+//--load qml engine---------------------------------------------
+    QQmlEngine *engine = new QQmlEngine;
+    QQmlComponent* comp = new QQmlComponent(engine);
+    comp->loadUrl(QUrl("qrc:/Main.qml"));
+    // qmlRegisterType<Calibrator>("CalIns",1,0,"Calibrator");
 
-    Calibrator* calibrator = new Calibrator(network,&engine);
+    //--set Calibrator instance----------------------------------
+    Calibrator* calibrator = new Calibrator(network);
+
+
+    // comp->setProperty("calIns" , calibrator);
 
     return app.exec();
 }
