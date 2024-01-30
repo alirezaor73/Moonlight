@@ -1,5 +1,0 @@
-module moonLight
-typeinfo appmoonLight.qmltypes
-prefer :/moonLight/
-Main 1.0 Main.qml
-

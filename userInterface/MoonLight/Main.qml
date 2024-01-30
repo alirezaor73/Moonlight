@@ -1,83 +1,45 @@
 import QtQuick
 import QtQuick.Layouts
 import QtQuick.Controls
+import "Components"
+import "Pages"
+
 
 Window {
     id: window
     width: 1280
     height: 800
     visible: true
-    title: qsTr("Hello World")
+    title: qsTr("MoonLight")
     color: "#232C3D"
-    ColumnLayout{
-        x: 40
-        y: 40
-        width: 1200
-        height: 727
-        //---------------450-----------------------------------------------------------------------------
-        Item{
-            id: l450
-            height: 91
-            RowLayout{
-                spacing: 40
-                Text {
-                    text: qsTr("450 :")
-                    color: "white"
-                }
-                Switch{
 
-                }
-                ColumnLayout{
-                    Text {
-                        text: qsTr("V")
-                        color: "white"
-                    }
-                    TextInput{
-                        text: "134"
-                        color: "white"
-                    }
-                }
-                ColumnLayout{
-                    Text {
-                        text: qsTr("C")
-                        color: "white"
-                    }
-                    TextInput{
-                        text: "134"
-                        color: "white"
-                    }
-                }
-                ColumnLayout{
-                    Text {
-                        text: qsTr("Step")
-                        color: "white"
-                    }
-                    ComboBox{
+    CalibrationPage{
+        id: calibrate
+        y : -1200
+    }
+    PropertyAnimation{
+        id: calibrAnimation
+        target: calibrate
+        properties: "y"
+    }
 
-                    }
-                }
-                Text {
-                    text: qsTr("-")
-                    color: "white"
-                }
-                ColumnLayout{
-                    Text {
-                        text: qsTr("Value")
-                        color: "white"
-                    }
-                    TextInput{
-                        text: "134"
-                        color: "white"
-                    }
-                }
-                Text {
-                    text: qsTr("+")
-                    color: "white"
-                }
-                Button{
-                    text: "Save"
-                }
+    MoonButton{
+        y : 800 - height - 40
+        x : 40
+        text: "calibrate"
+        onClicked: {
+            if(calibrate.y == 0){
+                calibrAnimation.to = -1200
+                calibrAnimation.running = true
+            }else{
+                calibrAnimation.to = 0
+                calibrAnimation.running = true
             }
         }
+    }
+
+    MoonKeypad{
+        anchors.bottom: parent.bottom
+        anchors.horizontalCenter: parent.horizontalCenter
     }
 }

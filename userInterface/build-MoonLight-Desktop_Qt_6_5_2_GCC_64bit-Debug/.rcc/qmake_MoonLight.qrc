@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/MoonLight">
-    <file alias="qmldir">/home/client113/Desktop/moonlight/userInterface/build-MoonLight-Desktop_Qt_6_5_2_GCC_64bit-Debug/MoonLight/qmldir</file>
-  </qresource>
-</RCC>
-

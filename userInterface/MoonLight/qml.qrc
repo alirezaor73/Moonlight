@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Components/MoonKeypad.qml</file>
+        <file>Components/MoonSpinBox.qml</file>
+        <file>Components/MoonButton.qml</file>
+        <file>Components/MoonSwitch.qml</file>
+        <file>Components/MoonInput.qml</file>
+        <file>Components/MoonComboBox.qml</file>
+        <file>Main.qml</file>
+        <file>Pages/CalibrationPage.qml</file>
+    </qresource>
+</RCC>
