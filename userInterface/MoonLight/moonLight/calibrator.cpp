@@ -1,9 +1,7 @@
 #include "calibrator.h"
-#include <QQmlApplicationEngine>
-#include <QQmlComponent>
-#include <QQuickWindow>
 
-Calibrator::Calibrator(NetworkManager *net, QQmlEngine *engine):
+
+Calibrator::Calibrator(NetworkManager *net):
     mNetworkManager(net)
 {
 

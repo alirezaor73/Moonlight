@@ -11,6 +11,8 @@ Window {
     title: qsTr("MoonLight")
     color: "#232C3D"
 
+    property var calibratorIns
+
     CalibrationPage{}
 
 }

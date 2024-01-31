@@ -2,7 +2,6 @@
 #define CALIBRATOR_H
 
 #include "networkmanager.h"
-#include "qqmlengine.h"
 
 class Calibrator
 {
@@ -12,7 +11,7 @@ class Calibrator
     Q_PROPERTY(int iD      READ iD      WRITE setID      NOTIFY dataChanged FINAL)
 
 public:
-    Calibrator(NetworkManager *net,QQmlEngine *engine);
+    Calibrator(NetworkManager *net);
     Q_INVOKABLE void sendCalibrationData();
     Q_INVOKABLE void discardCalibration();
 

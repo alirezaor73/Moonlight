@@ -21,8 +21,7 @@ int main(int argc, char *argv[])
         Qt::QueuedConnection);
     engine.load(url);
 
-    Calibrator* calibrator = new Calibrator(network,&engine);
-
+    Calibrator* calibrator = new Calibrator(network);
 
 
     return app.exec();
