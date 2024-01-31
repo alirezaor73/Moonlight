@@ -1,0 +1,19 @@
+{
+	"BUILD_DIR" : "/home/alireza/Desktop/projects/Moonlight/userInterface/build-MoonLight-Desktop_Qt_6_6_1_GCC_64bit-Debug/moonlight_autogen",
+	"CMAKE_BINARY_DIR" : "/home/alireza/Desktop/projects/Moonlight/userInterface/build-MoonLight-Desktop_Qt_6_6_1_GCC_64bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/alireza/Desktop/projects/Moonlight/userInterface/build-MoonLight-Desktop_Qt_6_6_1_GCC_64bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/alireza/Desktop/projects/Moonlight/userInterface/MoonLight",
+	"CMAKE_SOURCE_DIR" : "/home/alireza/Desktop/projects/Moonlight/userInterface/MoonLight",
+	"INCLUDE_DIR" : "/home/alireza/Desktop/projects/Moonlight/userInterface/build-MoonLight-Desktop_Qt_6_6_1_GCC_64bit-Debug/moonlight_autogen/include",
+	"INPUTS" : [],
+	"LOCK_FILE" : "/home/alireza/Desktop/projects/Moonlight/userInterface/build-MoonLight-Desktop_Qt_6_6_1_GCC_64bit-Debug/CMakeFiles/moonlight_autogen.dir/AutoRcc_resources_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "resources" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_resources.cpp",
+	"RCC_EXECUTABLE" : "/opt/Qt/6.6.1/gcc_64/./libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/alireza/Desktop/projects/Moonlight/userInterface/build-MoonLight-Desktop_Qt_6_6_1_GCC_64bit-Debug/CMakeFiles/moonlight_autogen.dir/AutoRcc_resources_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/home/alireza/Desktop/projects/Moonlight/userInterface/MoonLight/resources.qrc",
+	"VERBOSITY" : 0
+}
