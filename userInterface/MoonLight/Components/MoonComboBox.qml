@@ -7,7 +7,7 @@ ComboBox {
     Layout.alignment: Qt.AlignVCenter
     Layout.preferredHeight: 56
     Layout.preferredWidth: 205
-    model: [1000, 100, 10, 1, 0.1, 0.05, 0.01]
+    model: [0]
     currentIndex: 0
     font.pointSize: 10
     displayText: model[currentIndex].toString()

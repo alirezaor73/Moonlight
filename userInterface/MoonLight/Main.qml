@@ -38,8 +38,8 @@ Window {
         }
     }
 
-    MoonKeypad{
-        anchors.bottom: parent.bottom
-        anchors.horizontalCenter: parent.horizontalCenter
-    }
+    // MoonKeypad{
+    //     anchors.bottom: parent.bottom
+    //     anchors.horizontalCenter: parent.horizontalCenter
+    // }
 }

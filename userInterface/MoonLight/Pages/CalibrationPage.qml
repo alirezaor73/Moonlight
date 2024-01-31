@@ -1,12 +1,15 @@
 import QtQuick
 import QtQuick.Layouts
 import "../Components"
-// import CalIns 1.0
+import CalIns 1.0
 
 
 Item {
 
-    property var calIns
+    Calibrator{
+        objectName: "calibIns"
+        id: calib
+    }
 
     RowLayout{
         x: 40
@@ -18,12 +21,13 @@ Item {
             id: btn450
             checkBTN: true
             text: "450"
+            Component.onCompleted: calib.channel = 450
             onClicked: {
                 checkBTN = true
                 btn635.checkBTN = false
                 btn8081.checkBTN = false
                 btn8082.checkBTN = false
-                // Calibrator.channel = 450
+                calib.channel = 450
             }
         }
         MoonButton{
@@ -35,7 +39,7 @@ Item {
                 btn450.checkBTN = false
                 btn8081.checkBTN = false
                 btn8082.checkBTN = false
-                // Calibrator.channel = 635
+                calib.channel = 635
             }
         }
         MoonButton{
@@ -47,7 +51,7 @@ Item {
                 btn635.checkBTN = false
                 btn450.checkBTN = false
                 btn8082.checkBTN = false
-                // Calibrator.channel = 8081
+                calib.channel = 8081
             }
         }
         MoonButton{
@@ -59,7 +63,7 @@ Item {
                 btn635.checkBTN = false
                 btn8081.checkBTN = false
                 btn450.checkBTN = false
-                // Calibrator.channel = 8082
+                calib.channel = 8082
             }
         }
     }
@@ -117,7 +121,8 @@ Item {
                         font.pointSize: 18
                     }
                     MoonComboBox{
-
+                        model: [1000, 2000, 3000, 4000]
+                        onCurrentIndexChanged: calib.power = model[currentIndex]
                     }
                 }
                 ColumnLayout{
@@ -128,7 +133,7 @@ Item {
                         font.pointSize: 18
                     }
                     MoonSpinBox{
-
+                        onValueChanged: calib.vSUP = value
                     }
                 }
                 ColumnLayout{
@@ -139,7 +144,7 @@ Item {
                         font.pointSize: 18
                     }
                     MoonSpinBox{
-
+                        onValueChanged: calib.iD = value
                     }
                 }
             }
@@ -162,7 +167,7 @@ Item {
             width: 224
             height: 56
             checkBTN: true
-            onClicked: Calibrator.sendCalibrationData()
+            onClicked: calib.sendCalibrationData()
 
         }
     }

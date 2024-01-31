@@ -3,20 +3,25 @@
 #include <QQmlComponent>
 #include <QQuickWindow>
 
-Calibrator::Calibrator(NetworkManager *net):
-    mNetworkManager(net)
+Calibrator::Calibrator()
 {
 
 }
 
 void Calibrator::sendCalibrationData()
 {
-    qDebug() << "jssdkfsdf";
+    qDebug() << mChannel << mPower << mVSUP << mID;
 }
 
 void Calibrator::discardCalibration()
 {
 
+}
+
+void Calibrator::setNetwork(NetworkManager *net)
+{
+    mNetworkManager = net;
+    qDebug() << "000000";
 }
 
 int Calibrator::channel()
@@ -27,7 +32,6 @@ int Calibrator::channel()
 void Calibrator::setChannel(int channel)
 {
     mChannel = channel;
-    qDebug() << mChannel;
 }
 
 int Calibrator::power()
