@@ -8,5 +8,6 @@
         <file>Components/MoonComboBox.qml</file>
         <file>Main.qml</file>
         <file>Pages/CalibrationPage.qml</file>
+        <file>Components/MoonKeyboard.qml</file>
     </qresource>
 </RCC>

@@ -5,11 +5,14 @@ Button {
 
     property bool checkBTN: true
     property bool activeBTN: true
+    property string colorBTN: "#4DB6AC"
+    property string borderColorBTN: "#53575E"
+    property string pressColorBTN: "#21A191"
 
 
     onCheckBTNChanged: {
         if (checkBTN == true){
-            bkg.color = "#4DB6AC"
+            bkg.color = colorBTN
             root.palette.buttonText = "#232C3D"
         } else{
             bkg.color = "transparent"
@@ -25,11 +28,11 @@ Button {
     background: Rectangle{
         id: bkg
         anchors.fill: root
-        color: checkBTN ? "#4DB6AC" : "transparent"
+        color: checkBTN ? colorBTN : "transparent"
         radius: 10
         border.width: 2
-        border.color: "#53575E"
+        border.color: borderColorBTN
     }
-    onPressed: bkg.color = "#21A191"
-    onReleased: bkg.color = checkBTN ? "#4DB6AC" : "transparent"
+    onPressed: bkg.color = pressColorBTN
+    onReleased: bkg.color = checkBTN ? colorBTN : "transparent"
 }
