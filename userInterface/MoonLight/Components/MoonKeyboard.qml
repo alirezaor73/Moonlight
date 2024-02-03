@@ -9,10 +9,10 @@ Item {
     signal moonRejected();
 
     // private
-    width: 333;  height: 344
+    width: 1280;  height: 344
 
     property bool   shift:          false
-    property double rowSpacing:     0.01 * width
+    property double rowSpacing:     0.007 * width
     property double columnSpacing:  0.02 * height
     property double columns:        10
     property double rows:           5
@@ -24,10 +24,10 @@ Item {
         color: "#191C22"
 
         MoonButton {
-            colorBTN: "#2A3139"
+            primaryColor:  "#2A3139"
             palette.buttonText: "white"
-            borderColorBTN: "transparent"
-            pressColorBTN: "white"
+            borderColor: "transparent"
+            secondaryColor:  "white"
             id: closeButton
             text: '\u2193'
             width: height;  height: 0.8 * parent.height
@@ -48,10 +48,10 @@ Item {
         }
 
         MoonButton {
-            colorBTN: "#2A3139"
+            primaryColor:  "#2A3139"
             palette.buttonText: "white"
-            borderColorBTN: "transparent"
-            pressColorBTN: "white"
+            borderColor: "transparent"
+            secondaryColor:  "white"
             id: clearButton
             text: '\u2715'
             width: height;  height: 0.8 * parent.height
@@ -87,10 +87,10 @@ Item {
                             {text: '0', width: 1},
                         ]
                         delegate: MoonButton {
-                            colorBTN: "#343C45"
+                            primaryColor:  "#343C45"
                             palette.buttonText: "white"
-                            borderColorBTN: "transparent"
-                            pressColorBTN: "white"
+                            borderColor: "transparent"
+                            secondaryColor:  "white"
                             text: modelData.text
                             width: modelData.width * keyboard.width / columns - rowSpacing
                             height: keyboard.height / rows - columnSpacing
@@ -104,8 +104,8 @@ Item {
                     Repeater {
                         model: [
                             {text: 'q',  width: 1},
-                            {text: 'w',  width: 1}, // MULTIPLICATION SIGN
-                            {text: 'e',  width: 1}, // DIVISION SIGN
+                            {text: 'w',  width: 1},
+                            {text: 'e',  width: 1},
                             {text: 'r',  width: 1},
                             {text: 't',  width: 1},
                             {text: 'y',  width: 1},
@@ -114,12 +114,11 @@ Item {
                             {text: 'o',  width: 1},
                             {text: 'p',  width: 1},
                         ]
-
                         delegate: MoonButton {
-                            colorBTN: "#2A3139"
+                            primaryColor:  "#2A3139"
                             palette.buttonText: "white"
-                            borderColorBTN: "transparent"
-                            pressColorBTN: "white"
+                            borderColor: "transparent"
+                            secondaryColor:  "white"
                             text: shift? modelData.text.toUpperCase():  modelData.text
                             width: modelData.width * keyboard.width / columns - rowSpacing
                             height: keyboard.height / rows - columnSpacing
@@ -144,10 +143,10 @@ Item {
                             {text: '@',  width: 1},
                         ]
                         delegate: MoonButton {
-                            colorBTN: "#2A3139"
+                            primaryColor:  "#2A3139"
                             palette.buttonText: "white"
-                            borderColorBTN: "transparent"
-                            pressColorBTN: "white"
+                            borderColor: "transparent"
+                            secondaryColor:  "white"
                             text:  shift? modelData.text.toUpperCase():  modelData.text
                             width: modelData.width * keyboard.width / columns - rowSpacing
                             height: keyboard.height / rows - columnSpacing
@@ -173,10 +172,10 @@ Item {
                         ]
 
                         delegate: MoonButton {
-                            colorBTN: text === "\u21E7" ? "#333C45" : "#2A3139"
+                            primaryColor:  text === "\u21E7" ?  "#333C45" : "#2A3139"
                             palette.buttonText: "white"
-                            borderColorBTN: "transparent"
-                            pressColorBTN: "white"
+                            borderColor: "transparent"
+                            secondaryColor:  "white"
                             text:  shift? modelData.text.toUpperCase():  modelData.text
                             width: modelData.width * keyboard.width / columns - rowSpacing
                             height: keyboard.height / rows - columnSpacing
@@ -189,19 +188,19 @@ Item {
                     spacing: rowSpacing
                     Repeater {
                         model: [
-                            {text:  "\u25C0",     width: 1},
-                            {text:  '\u25B6',     width: 1},
-                            {text:  ' ',     width: 4}, // space
-                            {text:  '-',     width: 1},
-                            {text:  '_',     width: 1},
+                            {text:  "\u25C0",     width: 0.5},
+                            {text:  '\u25B6',     width: 0.5},
+                            {text:  ' ',     width: 6}, // space
+                            {text:  '-',     width: 0.5},
+                            {text:  '_',     width: 0.5},
                             {text: '\u21B5', width: 2}, // enter
                         ]
 
                         delegate: MoonButton {
-                            colorBTN:text === "\u21B5" ? "#3A4B5D" : "#2A3139"
+                            primaryColor:  text === "\u21B5" ? "#3A4B5D" : "#2A3139"
                             palette.buttonText: "white"
-                            borderColorBTN: "transparent"
-                            pressColorBTN: "white"
+                            borderColor: "transparent"
+                            secondaryColor:  "white"
                             text:    modelData.text
                             width: modelData.width * keyboard.width / columns - rowSpacing
                             height: keyboard.height / rows - columnSpacing
@@ -218,13 +217,13 @@ Item {
     signal moonClicked(string text)
     onMoonClicked: function(text){
         var position = textInput.cursorPosition
-        if(     text === '\u232B') { //(backspace)
+        if(text === '\u232B') { //(backspace)
             position = textInput.cursorPosition
             textInput.text = textInput.text.substring(0, textInput.cursorPosition - 1) +
                     textInput.text.substring(textInput.cursorPosition, textInput.text.length)
             textInput.cursorPosition = position - 1
         }
-        else if(text === '\u2191')  shift   = !shift (shift)
+        else if(text === '\u21E7')  shift   = !shift //(shift)
         else if(text === '\u21B5')  moonAccepted(textInput.text) //(enter)
         else if(text === "\u25C0") textInput.cursorPosition = position -1
         else if(text === "\u25B6" ){(textInput.cursorPosition >= textInput.text.length) ? (textInput.cursorPosition = position) : (textInput.cursorPosition = position +1)}

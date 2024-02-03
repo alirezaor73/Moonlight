@@ -3,18 +3,20 @@ import QtQuick.Controls
 
 Button {
 
+    property string primaryColor: "#4DB6AC"
+    property string secondaryColor: "#232C3D"
+    property string borderColor: "#53575E"
     property bool checkBTN: true
     property bool activeBTN: true
-    property string colorBTN: "#4DB6AC"
-    property string borderColorBTN: "#53575E"
-    property string pressColorBTN: "#21A191"
 
 
     onCheckBTNChanged: {
         if (checkBTN == true){
-            bkg.color = colorBTN
-            root.palette.buttonText = "#232C3D"
+            bkg.border.color = "transparent"
+            bkg.color = primaryColor
+            root.palette.buttonText = secondaryColor
         } else{
+            bkg.border.color = borderColor
             bkg.color = "transparent"
             root.palette.buttonText = "white"
         }
@@ -23,16 +25,22 @@ Button {
     id: root
     implicitWidth: 282
     implicitHeight: 48
-    palette.buttonText: checkBTN ? "#232C3D" :"white"
+    palette.buttonText: checkBTN ? secondaryColor : primaryColor
 
     background: Rectangle{
         id: bkg
         anchors.fill: root
-        color: checkBTN ? colorBTN : "transparent"
+        color: checkBTN ? primaryColor : "transparent"
         radius: 10
         border.width: 2
-        border.color: borderColorBTN
+        border.color: borderColor
     }
-    onPressed: bkg.color = pressColorBTN
-    onReleased: bkg.color = checkBTN ? colorBTN : "transparent"
+    onPressed: {
+        bkg.color = checkBTN ? secondaryColor : primaryColor
+        palette.buttonText = primaryColor
+    }
+    onReleased:{
+        palette.buttonText = checkBTN ? secondaryColor : primaryColor
+        bkg.color = checkBTN ? primaryColor : "transparent"
+    }
 }

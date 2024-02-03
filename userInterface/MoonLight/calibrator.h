@@ -33,8 +33,8 @@ signals:
 
 private:
     NetworkManager* mNetworkManager{nullptr};
-    int mChannel = 0;
-    int mPower = 0;
+    int mChannel = 450;
+    int mPower = 1000;
     int mVSUP = 0;
     int mID = 0 ;
 };

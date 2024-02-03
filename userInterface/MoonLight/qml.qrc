@@ -9,5 +9,7 @@
         <file>Main.qml</file>
         <file>Pages/CalibrationPage.qml</file>
         <file>Components/MoonKeyboard.qml</file>
+        <file>Components/MoonProgressBar.qml</file>
+        <file>Components/MoonToggle.qml</file>
     </qresource>
 </RCC>

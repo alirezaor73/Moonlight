@@ -46,7 +46,9 @@ Item {
         }
         MoonButton { // clear x
             id: clearButton
-            colorBTN:  "#2A3139"
+            primaryColor:   "#2A3139"
+            borderColor: "transparent"
+            secondaryColor:  "white"
             palette.buttonText: "white"
             text: '\u232B'
             width: height *1.5;  height: 0.8 * parent.height
@@ -73,8 +75,10 @@ Item {
                              {text: '3', width: 1},
                         ]
                         delegate: MoonButton {
-                            colorBTN:  "#2A3139"
+                            primaryColor:   "#2A3139"
                             palette.buttonText: "white"
+                            borderColor: "transparent"
+                            secondaryColor:  "white"
                             text: modelData.text
                             width: modelData.width * keyboard.width / columns - rowSpacing
                             height: keyboard.height / rows - columnSpacing
@@ -91,8 +95,10 @@ Item {
                              {text: '6', width: 1},
                         ]
                         delegate: MoonButton {
-                            colorBTN:  "#2A3139"
+                            primaryColor:   "#2A3139"
                             palette.buttonText: "white"
+                            borderColor: "transparent"
+                            secondaryColor:  "white"
                             text:  modelData.text
                             width: modelData.width * keyboard.width / columns - rowSpacing
                             height: keyboard.height / rows - columnSpacing
@@ -109,8 +115,10 @@ Item {
                              {text: '9', width: 1},
                         ]
                         delegate: MoonButton {
-                            colorBTN:  "#2A3139"
+                            primaryColor:   "#2A3139"
                             palette.buttonText: "white"
+                            borderColor: "transparent"
+                            secondaryColor:  "white"
                             text:  modelData.text
                             width: modelData.width * keyboard.width / columns - rowSpacing
                             height: keyboard.height / rows - columnSpacing
@@ -127,8 +135,10 @@ Item {
                              {text: '\u21B5', width: 1},
                         ]
                         delegate: MoonButton {
-                            colorBTN: text === "\u21B5" ? "#3A4B5D" : "#2A3139"
+                            primaryColor:  text === "\u21B5" ? "#3A4B5D" : "#2A3139"
                             palette.buttonText: "white"
+                            borderColor: "transparent"
+                            secondaryColor:  "white"
                             text:  modelData.text
                             width: modelData.width * keyboard.width / columns - rowSpacing
                             height: keyboard.height / rows - columnSpacing

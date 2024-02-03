@@ -30,7 +30,7 @@ Window {
     //     x : 40
     //     text: "calibrate"
     //     onClicked: {
-    //         if(calibrate.y == 0){
+    //         if(calibrate.y === 0){
     //             calibrAnimation.to = -1200
     //             calibrAnimation.running = true
     //         }else{
@@ -51,11 +51,33 @@ Window {
     // }
 
 
-    MoonKeyboard{
-        id: keyBoard
-        anchors.bottom: parent.bottom
-        anchors.horizontalCenter: parent.horizontalCenter
-        height: 436
-        width: parent.width
-    }
+    // MoonKeyboard{
+    //     id: keyBoard
+    //     anchors.bottom: parent.bottom
+    //     anchors.horizontalCenter: parent.horizontalCenter
+    //     height: 436
+    //     width: parent.width
+    // }
+
+    // MoonProgressBar{
+    //     id:prog
+    //     progressDuration: 5
+
+    // }
+
+    // MoonButton{
+    //     anchors.bottom: parent.bottom
+    //     onClicked: prog.start()
+    // }
+    // MoonButton{
+    //     anchors.bottom: parent.bottom
+    //     onClicked: prog.pause()
+    //     x: 300
+    // }
+
+    // MoonToggle{
+    //     leftIcon: "qrc:/Resources/rc1.png"
+    //     rightIcon: "qrc:/Resources/rc2.png"
+    // }
+
 }
